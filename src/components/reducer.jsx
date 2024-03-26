@@ -22,7 +22,7 @@ const reducer = (state, action) => {
     case "SEARCH_QUERY":
       return {
         ...state,
-        query: action.ahad,
+        query: action.payload,
       };
     case "NEXT_PAGE":
       let pageNumInc = state.page + 1;
